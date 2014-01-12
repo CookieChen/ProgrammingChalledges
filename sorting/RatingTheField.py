@@ -24,14 +24,14 @@ def compareSuitor(suitorA, suitorB):
     if(suitorA.weight > suitorB.weight) :
         return 1
         
-    if(len(suitorA.last) < len(suitorB.last)) :
+    if(len(suitorA.lastName) < len(suitorB.lastName)) :
         return -1
-    if(len(suitorA.last) > len(suitorB.last)) :
+    if(len(suitorA.lastName) > len(suitorB.lastName)) :
         return 1
     
-    if(len(suitorA.first) < len(suitorB.first)) :
+    if(len(suitorA.firstName) < len(suitorB.firstName)) :
         return -1
-    if(len(suitorA.first) > len(suitorB.first)) :
+    if(len(suitorA.firstName) > len(suitorB.firstName)) :
         return 1
     
     return 0
