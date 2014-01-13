@@ -51,7 +51,13 @@ class Test(unittest.TestCase):
         eve.firstName = "Cake"
         
         self.assertFalse(compareSuitor(cookie, eve) == 0, "LastName of CompareSuitor()")
-
+    
+    def testCompareSuitor(self):
+        self.testHeightOfCompareSuitor()
+        self.testWeightOfCompareSuitor()
+        self.testLastNameOfCompareSuitor()
+        self.testFirstNameOfCompareSuitor()
+    
 if __name__ == "__main__":
     #import sys;sys.argv = ['', 'Test.testName']
     unittest.main()
